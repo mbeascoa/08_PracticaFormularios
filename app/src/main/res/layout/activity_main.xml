@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1">
+        <RadioGroup
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioGroup1">
+
+            <RadioButton
+                android:id="@+id/radioMañana"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:onClick="clickActivar"
+                android:text="Mañana" />
+
+            <RadioButton
+                android:id="@+id/radioTarde"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="clickActivar"
+                android:text="Tarde" />
+
+            <RadioButton
+                android:id="@+id/RadioSinNada"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="clickRdbNada"
+                android:text="Indiferente" />
+        </RadioGroup>
+    </LinearLayout>
+    <CheckBox
+        android:text=".NET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/chkNet" />
+    <CheckBox
+        android:text="Java"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/chkJava" />
+    <CheckBox
+        android:text="Oracle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/chkOracle" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="mostrar"
+        android:text="Guardar" />
+
+</LinearLayout>
